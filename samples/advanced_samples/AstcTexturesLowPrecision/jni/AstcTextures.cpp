@@ -708,22 +708,22 @@ void cleanup_graphics(void)
 
 extern "C"
 {
-    JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextureslowprecision_NativeLibrary_init(JNIEnv*, jobject, jint width, jint height);
-    JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextureslowprecision_NativeLibrary_step(JNIEnv*, jobject);
-    JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextureslowprecision_NativeLibrary_uninit(JNIEnv*, jobject);
+    JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextures_NativeLibrary_init(JNIEnv*, jobject, jint width, jint height);
+    JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextures_NativeLibrary_step(JNIEnv*, jobject);
+    JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextures_NativeLibrary_uninit(JNIEnv*, jobject);
 };
 
-JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextureslowprecision_NativeLibrary_init(JNIEnv*, jobject, jint width, jint height)
+JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextures_NativeLibrary_init(JNIEnv*, jobject, jint width, jint height)
 {
     setup_graphics(width, height);
 }
 
-JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextureslowprecision_NativeLibrary_step(JNIEnv*, jobject)
+JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextures_NativeLibrary_step(JNIEnv*, jobject)
 {
     render_frame();
 }
 
-JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextureslowprecision_NativeLibrary_uninit(JNIEnv*, jobject)
+JNIEXPORT void JNICALL Java_com_arm_malideveloper_openglessdk_astctextures_NativeLibrary_uninit(JNIEnv*, jobject)
 {
     cleanup_graphics();
 }

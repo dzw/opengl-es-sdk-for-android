@@ -58,7 +58,7 @@ android {
             resources.srcDirs = ['res']
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
-			java.srcDirs = ['src']
+            java.srcDirs = ['src']
         }
     }
 
@@ -70,5 +70,5 @@ android {
 }
 
 dependencies {
-   implementation project(':samples:advanced_samples:common_java')
+    implementation project(':samples:advanced_samples:common_java')
 }

@@ -6,7 +6,6 @@ println sample
 
 android {
     compileSdkVersion 28
-    ndkVersion "21.4.7075529"
 
     defaultConfig {
         minSdkVersion 9
